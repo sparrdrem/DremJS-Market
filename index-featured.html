@@ -1,7 +1,6 @@
 <html>
   <head>  
     <title>DremJS Market</title>
-    <embed src="music.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
     <style>
       .box-blue {
         margin:0 0 25px;
@@ -33,13 +32,24 @@
         color: #FFFFFF;
       }
     </style>
+    <script language="javascript" type="text/javascript">
+      function playSound(soundfile) {
+        document.getElementById("dummy").innerHTML= "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+      }
+    </script>
   </head>
+  
+  <span id="dummy"></span>
+  
   <body>
+    <h1>DremJS Market</h1>
+    <hr />
     <div class="box-blue">
       <div class="box-blue-emb">
-        <h1 class="rel-emb cwhite">Welcome to the DremJS Market!</h1>
+        <h1 class="rel-emb cwhite">Featured Items</h1>
       </div>
-      <h2 class="rel-uemb">"Your one-stop-shop for any Web App you need!"</h2>
+      <h2 class="rel-uemb"><a href="collection.js" onclick="playSound('select.wav');">>Collection.JS</a></h2>
+      <p class="rel-uemb">A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p>
     </div>
     <h2>Collection.JS</h2>
     <p>A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p>
