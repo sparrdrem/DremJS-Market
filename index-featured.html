@@ -25,19 +25,13 @@
       }
       .rel-emb {
         position: relative;
-        top: 2px;
+        left: 10px;
       }
       .cwhite {
         color: #FFFFFF;
       }
     </style>
-    <script language="javascript" type="text/javascript">
-      function playSound(soundfile) {document.getElementById("dummy").innerHTML= "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";}
-    </script>
   </head>
-  
-  <span id="dummy"></span>
-  
   <body>
     <h1>DremJS Market</h1>
     <hr />
@@ -45,9 +39,26 @@
       <div class="box-blue-emb">
         <h1 class="rel-emb">Featured Items</h1>
       </div>
-      <h2 class="rel-uemb"><a href="collection.js" onclick="playSound('select.wav');">>Collection.JS</a></h2>
-      <p class="rel-uemb">A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p>
+      <table border="0px">
+        <tbody>
+          <tr>
+            <td><h2 class="rel-uemb"><a href="collection.js.reload">Collection.JS</a></h2>
+            <p class="rel-uemb">A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p></td>
+            <td><h2 class="rel-uemb"><a href="sygtvg.reload">Sam&Yoe Group: The Video Game</a></h2>
+              <p class="rel-uemb">Play the Game Directly on DremJS!</p></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td><h2 class="rel-uemb"><a href="bellard.reload">Bellard JSLinux</a></h2>
+              <p class="rel-uemb">Our computers can't seem to understand how to use the make command so we made an app that connects directly to the demo website. You can connect your VFsync account to most of the OSes on this site to save your files, so you don't lose everything due to going to the home screen.</p></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <center>
+      <button><a href="index-enter.reload">Start Shopping</a></button>
+              <!--
     <h2>Collection.JS</h2>
     <p>A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p>
     <p>Provided by SparrOSDeveloperTeam</p>
@@ -77,6 +88,7 @@
     <p>The TinyMCE text editor on DremJS!</p>
     <p>Provided by Innovation Inc.</p>
     <input type="button" value="Download" onclick="window.location.href='https://github.com/sparrdrem/DremJS-Market/releases/download/Apps/tinymce.zip'" />
+    -->
     <hr />
     <p>Send any apps you want added to the DremJS Market to innovationinc123@gmail.com</p>
   </body>
