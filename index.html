@@ -57,25 +57,32 @@
         bottom: 0px;
         right: 0px;
       }
+      .verticalcenter {
+      display: table-cell;
+      vertical-align: middle;
+    }
     </style>
   </head>
   <body>
-    <script>
-      var current= new Date();
-      var month=current.getMonth();
-      var date=current.getDate();
+    <center>
+      <div style="verticalcenter">
+      <script>
+        var current= new Date();
+        var month=current.getMonth();
+        var date=current.getDate();
         function loadImage(image) {
-        var x = document.createElement("IMG");
-        x.setAttribute("src", image);
-        document.body.appendChild(x);
-      }
-      if (month=="3" && date=="13") {
-        loadImage("gate.gif");
-      } else {
-        loadImage("load.png");
-      }
+          var x = document.createElement("IMG");
+          x.setAttribute("src", image);
+          document.body.appendChild(x);
+        }
+        if (month=="3" && date=="13") {
+          loadImage("gate.gif");
+        } else {
+          loadImage("load.gif");
+        }
     </script>
-    <p class="br">v0.1.3</p>
+    </div>
+    <p class="br">v0.1.4</p>
   </body>
 </html>
 <!-- animation:1.5s rotateRight infinite linear; -->
