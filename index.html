@@ -64,15 +64,23 @@
       <tr>
         <td>
           <script>
+            function show_image(src, width, height, alt) {
+              var img = document.createElement("img");
+              img.src = src;
+              img.width = width;
+              img.height = height;
+              img.alt = alt;
             var current= new Date()
             var month=current.getMonth()
             var date=current.getDate()
             //document.write("DEBUG DATA: " + month)
             //document.write("DEBUG DATA: " + date)
             if (month=4 && date=13) {
-              document.write("<img src='gate.gif'>")
+              show_image('gate.gif', 100, 100, 'Load');
+              //document.write("<img src='gate.gif'>")
             } else {
-              document.write("<img src='load.png'>")
+              show_image('load.png', 100, 100, 'Load');
+              //document.write("<img src='load.png'>")
             }
           </script>
         </td>
