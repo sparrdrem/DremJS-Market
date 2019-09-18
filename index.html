@@ -44,7 +44,7 @@
         vertical-align: middle;
         text-align: center;
       }
-      img{ 
+      .rotate_Img{ 
         transform-origin:50% 50%;
         animation:1.5s rotateRight infinite linear; 
       }
@@ -63,7 +63,16 @@
     <table id="wrapper">
       <tr>
         <td>
-            <img src="load.png" alt="Error loading preloader... Loading DremJS Market..." />
+          <script>
+            var current= new Date()
+            var month=current.getMonth()
+            var date=current.getDate()
+            if (month=4 && day=13) {
+              document.write("<img src='gate.gif'>")
+            } else {
+              document.write("<img src='load.png' style="rotate_Img">")
+            }
+          </script>
         </td>
       </tr>
     </table>
