@@ -64,18 +64,18 @@
       <tr>
         <td>
           <script>
-            var current= new Date()
-            var month=current.getMonth()
-            var date=current.getDate()
-            document.write("DEBUG DATA: " + month)
-            document.write("DEBUG DATA: " + date)
+            var current= new Date();
+            var month=current.getMonth();
+            var date=current.getDate();
+            function loadImage(image) {
+              var x = document.createElement("IMG");
+              x.setAttribute("src", image);
+              document.body.appendChild(x);
+              }
             if (month=4 && date=13) {
-              document.write("DEBUG DATA: condition was true")
-              show_image('gate.gif', 100, 100, 'Load');
-              document.write("<img src='gate.gif'>")
+              loadImage("gate.gif");
             } else {
-              document.write("DEBUG DATA: condition was false")
-              document.write("<img src='load.png'>")
+              loadImage("load.png");
             }
           </script>
         </td>
