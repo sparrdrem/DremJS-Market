@@ -55,7 +55,7 @@
       .br {
         position: absolute;
         bottom: 0px;
-        right: 0px;
+        right: 2px;
       }
       .verticalcenter {
       vertical-align: middle;
@@ -64,25 +64,22 @@
     </style>
   </head>
   <body>
-    <center>
-      <div class="verticalcenter">
-      <script>
-        var current= new Date();
-        var month=current.getMonth();
-        var date=current.getDate();
-        function loadImage(image) {
-          var x = document.createElement("IMG");
-          x.setAttribute("src", image);
-          document.body.appendChild(x);
-        }
-        if (month=="3" && date=="13") {
-          loadImage("gate.gif");
-        } else {
-          loadImage("load.gif");
-        }
-      </script>
-    </div>
-    </center>
+    <script>
+      var current= new Date();
+      var month=current.getMonth();
+      var date=current.getDate();
+      function loadImage(image) {
+        var x = document.createElement("IMG");
+        x.setAttribute("src", image);
+        x.setAttribute("class", "verticalcenter");
+        document.body.appendChild(x);
+      }
+     if (month=="3" && date=="13") {
+        loadImage("gate.gif");
+      } else {
+        loadImage("load.gif");
+      }
+    </script>
     <p class="br">v0.1.4</p>
   </body>
 </html>
