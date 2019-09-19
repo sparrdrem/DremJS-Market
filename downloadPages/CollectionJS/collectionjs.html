@@ -13,12 +13,29 @@
         -webkit-border-radius: 5px;
         border-radius: 5px;
       }
-      .box-blue-emb {
+      .box-blue-emb-left {
         margin:0 0 25px;
         overflow:hidden;
         padding:0px;
         background-color:#009ac7;
         border-radius: 5px;
+        position: absolute;
+        left: 0px;
+        width: 45%;
+      }
+      .box-blue-emb-right {
+        margin:0 0 25px;
+        overflow:hidden;
+        padding:0px;
+        background-color:#009ac7;
+        border-radius: 5px;
+        position: absolute;
+        right: 0px;
+        width: 45%;
+      }
+      .buttonWrapper {
+        width:95%;
+        position: fixed; 
       }
       .rel-uemb {
         position: relative;
@@ -68,12 +85,21 @@
       <br />
       <p>A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p>
     </div>
-    <div class="box-blue-emb" onclick="clickSound('https://github.com/sparrdrem/DremJS-Market/releases/download/Apps/Collection-JS.zip')">
-      <center>
-        <h3 class="cwhite">Download</h2>
-        <hr />
-        <h3 class="cwhite">Version 1.0.0</h3>
-      </center>
+    <div class="buttonWrapper">
+      <div class="box-blue-emb-left" onclick="clickSound('https://github.com/sparrdrem/DremJS-Market/releases/download/Apps/Collection-JS.zip')">
+        <center>
+          <h3 class="cwhite">Download</h2>
+          <hr />
+          <h3 class="cwhite">Version 1.0.0</h3>
+        </center>
+      </div>
+      <div>
+        <center>
+          <h3 class="cwhite">Go</h3>
+          <br />
+          <h3 class="cwhite">Back</h3>
+        </center>
+      </div>
     </div>
   </body>
 </html>
