@@ -39,13 +39,14 @@
   </head>
   <body>
     <script>
-      function clickSound(page) {
-        var audio = new Audio('https://github.com/sparrdrem/DremJS-Market/blob/master/select.wav?raw=true');
-        audio.play();
-        setTimeout(gotoPage, 2000);
-      }
-      function gotoPage() {
-        window.location.href = page;
+      <script>
+	function clickSound(page) {
+	  var audio = new Audio('https://github.com/sparrdrem/DremJS-Market/blob/master/select.wav?raw=true');
+          audio.play();
+	  setTimeout(gotoPage, 2000);
+	  function gotoPage() {
+    	    window.location.href = page;
+	}
       }
     </script>
     <h1>DremJS Market</h1>
@@ -59,20 +60,20 @@
           <tr>
             <td width="48%"><h2 class="rel-uemb"><a onclick="clickSound('collectionjs.html')">Collection.JS</a></h2>
             <p class="rel-uemb">A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p></td>
-            <td width="48%"><h2 class="rel-uemb"><a href="clickSound('sygtvg.html')">Sam&Yoe Group: The Video Game</a></h2>
+            <td width="48%"><h2 class="rel-uemb"><a onclick="clickSound('sygtvg.html')">Sam&Yoe Group: The Video Game</a></h2>
               <p class="rel-uemb">Play the Game Directly on DremJS!</p></td>
           </tr>
         </tbody>
         <tbody>
           <tr>
-            <td width="48%"><h2 class="rel-uemb"><a href="clickSound('bellard.html')">Bellard JSLinux</a></h2>
+            <td width="48%"><h2 class="rel-uemb"><a onclick="clickSound('bellard.html')">Bellard JSLinux</a></h2>
               <p class="rel-uemb">Our computers can't seem to understand how to use the make command so we made an app that connects directly to the demo website. You can connect your VFsync account to most of the OSes on this site to save your files, so you don't lose everything due to going to the home screen.</p></td>
           </tr>
         </tbody>
       </table>
     </div>
     <center>
-      <button><a href="clickSound('index-enter.html')">Start Shopping</a></button>
+      <button><a onclick="clickSound('index-enter.html')">Start Shopping</a></button>
               <!--
     <h2>Collection.JS</h2>
     <p>A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p>
