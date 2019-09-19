@@ -67,8 +67,10 @@
     <script>
       function clickSound(page) {
   	    window.globalPage=page;
-        var audio = new Audio('https://github.com/sparrdrem/DremJS-Market/blob/master/select.wav?raw=true');
+        var audio = new Audio('/DremJS-Market/select.wav')'
+        var loadSound = new Audio('/DremJS-Market/load.wav');
         audio.play();
+        loadSound.play();
         setTimeout(gotoPage, 2000);
       } 
       
