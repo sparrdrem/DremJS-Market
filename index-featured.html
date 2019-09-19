@@ -39,14 +39,14 @@
   </head>
   <body>
     <script>
-      <script>
-	function clickSound(page) {
-	  var audio = new Audio('https://github.com/sparrdrem/DremJS-Market/blob/master/select.wav?raw=true');
-          audio.play();
-	  setTimeout(gotoPage, 2000);
-	  function gotoPage() {
-    	    window.location.href = page;
-	}
+      function clickSound(page) {
+        var audio = new Audio('https://github.com/sparrdrem/DremJS-Market/blob/master/select.wav?raw=true');
+        audio.play();
+        setTimeout(gotoPage, 2000);
+      }
+        
+      function gotoPage(page) {
+        window.location.href = page;
       }
     </script>
     <h1>DremJS Market</h1>
