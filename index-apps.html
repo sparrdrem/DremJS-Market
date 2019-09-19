@@ -53,13 +53,11 @@
   <body>
     <script>
       function clickSound(page) {
-  	    window.globalPage=page;
-        var audio = new Audio('/DremJS-Market/select.wav');
-        var loadSound = new Audio('/DremJS-Market/load.wav');
+	      window.globalPage=page;
+        var audio = new Audio('https://github.com/sparrdrem/DremJS-Market/blob/master/select.wav?raw=true');
         audio.play();
-        loadSound.play();
         setTimeout(gotoPage, 2000);
-      } 
+      }
       
       function gotoPage(page) {
         window.location.href = globalPage;
