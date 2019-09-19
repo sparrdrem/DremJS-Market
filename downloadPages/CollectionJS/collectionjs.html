@@ -41,6 +41,18 @@
     </style>
   </head>
   <body>
+    <script>
+      function clickSound(page) {
+  	    window.globalPage=page;
+        var audio = new Audio('https://github.com/sparrdrem/DremJS-Market/blob/master/select.wav?raw=true');
+        audio.play();
+        setTimeout(gotoPage, 2000);
+      } 
+      
+      function gotoPage(page) {
+        window.location.href = globalPage;
+      }
+    </script>
     <!-- <iframe src="index-featured.html" frameborder="0" width="100%" height="100%"></iframe> -->
     <div class="box-blue">
       <p><img style="padding: 5 15px; float: left;" src="snapshot.png" height="480" width="720" /></p>
@@ -50,7 +62,7 @@
       <p>Released: June 30, 2018</p>
       <br />
       <p>A collection of JS apps such as emulators and applications. A sort of bundle app you could say!</p>
-      <div class="box-blue-emb, bottom">
+      <div class="box-blue-emb, bottom" onclick="clickSound('https://github.com/sparrdrem/DremJS-Market/releases/download/Apps/Collection-JS.zip')">
         <h2 class="cwhite">Download</h2>
         <hr />
         <h3 class="cwhite">Version 1.0.0</h3>
